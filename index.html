@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Form Transaksi</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="navbar">
+    <div class="logo">🛒 TOKO SEDERHANA</div>
+    <button class="toggle-dark" onclick="toggleDark()">🌙</button>
+</header>
+
+<div class="container">
+    <h2>Form Transaksi</h2>
+
+    <label>Nama Pelanggan</label>
+    <input type="text" id="nama">
+    <small id="errorNama" class="error"></small>
+
+    <label>Nama Produk</label>
+    <input type="text" id="produk">
+    <small id="errorProduk" class="error"></small>
+
+    <label>Harga Produk</label>
+    <input type="number" id="harga">
+    <small id="errorHarga" class="error"></small>
+
+    <label>Jumlah Pembelian</label>
+    <input type="number" id="jumlah">
+    <small id="errorJumlah" class="error"></small>
+
+    <div class="btn-group">
+        <button type="button" class="btn-hitung" onclick="hitungTotal()">Hitung</button>
+        <button type="button" class="btn-reset" onclick="resetForm()">Reset</button>
+    </div>
+
+    <div class="hasil">
+        Total Harga: <span id="total">Rp 0</span>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
